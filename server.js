@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.send("🚀 Million Pixel Server עובד!");
 });
 
-const PORT = 4242;
+const PORT = process.env.PORT || 4242;
 app.listen(PORT, () => {
   console.log("Server running on " + PORT);
 });
